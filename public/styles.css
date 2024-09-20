@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #007bff;
+}
+body {
+  font-family: monospace;
+}
+
+#file-upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+input {
+  margin-top: 10px;
+  width: 60%;
+  padding: 4px;
+}
+.custom-file-upload {
+  margin: 5px 0;
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--primary-color); /* Button background color */
+  color: white; /* Text color */
+  font-size: 14px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-align: center; /* Center the text */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  width: fit-content;
+}
+
+.custom-file-upload:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+.file-name {
+  color: green;
+  font-weight: 200;
+}
+#file-names {
+  margin: 5px 0;
+}
+#file-upload-form button {
+  width: fit-content;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white; /* Text color */
+  font-size: 14px; /* Font size */
+  cursor: pointer; /* Change cursor to pointer */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+#file-upload-form button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+#file-upload-form button:focus {
+  outline: none; /* Remove outline on focus */
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Upload App</title>
+  </head>
+
+  <body>
+    <div class="form">
+      <h1>Hello From File-Upload</h1>
+
+      <form id="file-upload-form" enctype="multipart/form-data">
+        <div>
+          <label for="name">Enter Your Name:</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div>
+          <label for="file"
+            >Enter any of these file types
+            <span style="color: red; font-weight: 200; font-size: 12px"
+              >jpg, .jpeg, .png, .gif, .pdf, .docx</span
+            >
+          </label>
+          <label for="files" class="custom-file-upload"> Choose Files </label>
+          <div id="file-names"><p style="color: gray">No files chosen</p></div>
+          <input
+            type="file"
+            name="files"
+            id="files"
+            style="display: none"
+            accept=".jpg, .jpeg, .png, .gif, .pdf, .docx"
+            multiple
+            required />
+        </div>
+        <p id="error-message" style="color: red"></p>
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
